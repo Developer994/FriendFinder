@@ -18,6 +18,19 @@ app.use(bodyParser.json());
 require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app);
 
+// Create New Friend - takes in JSON input
+app.post("/api/survey", function (req, res) {
+    // req.body hosts is equal to the JSON post sent from the user
+    // This works because of our body parsing middleware
+    var newFriend = req.body;
+
+    console.log(newFriend);
+
+    characters.push(newFriend);
+
+    res.json(newFriend);
+});
+
 app.listen(PORT, function () {
     console.log("App is listening on PORT: " + PORT)
 })

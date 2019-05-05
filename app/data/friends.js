@@ -14,6 +14,7 @@ var friends = [
     },
     {
         name: "friend2",
+        Link: "",
         Question1: "3",
         Question2: "4",
         Question3: "1",
@@ -26,6 +27,7 @@ var friends = [
     },
     {
         name: "friend3",
+        Link: "",
         Question1: "2",
         Question2: "2",
         Question3: "2",
@@ -39,6 +41,5 @@ var friends = [
 
 ];
 
-console.log(friends)
 
 module.exports = friends;   
