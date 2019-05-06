@@ -1,5 +1,4 @@
 var friends = require('../data/friends.js');
-// var bodyParser = require('body-parser')
 
 // The app here is the app we made in the 
 // server.js file. (var app = express();)
