@@ -246,8 +246,13 @@
             $.post("/api/friends", newFriend)
                 .then(function (data) {
                     console.log(data);
+
+                    $("#matchName").text(data.name);
+                    $("matchingImg").attr("src", data.photo);
+
+                    // To have the Modal toggle on to the page.
                     $("#Modal").modal("toggle");
-                    // alert("Adding Friend...");
+
                 });
         });
 
